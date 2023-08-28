@@ -17,7 +17,7 @@ defmodule PhoenixTooltipsWeb.Router do
   scope "/", PhoenixTooltipsWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", PageLive, :home
   end
 
   # Other scopes may use custom stacks.
