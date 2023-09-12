@@ -1,9 +1,9 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
   <%= for color <- @color_names do %>
-    <div class="h-16" style={"background-color:#{color}"}>
+    <button class="h-16 rounded-none" style={"background-color:#{color}"}>
       <.tooltip class="px-4 py-2 font-medium text-white bg-black border border-white rounded-md">
         <%= color %>
       </.tooltip>
-    </div>
+    </button>
   <% end %>
 </div>

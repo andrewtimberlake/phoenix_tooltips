@@ -7,6 +7,10 @@
   display: none;
 }
 
+.tooltip[data-show] {
+  display: block;
+}
+
 .tooltip > .arrow,
 .tooltip > .arrow:before {
   position: absolute;
@@ -26,10 +30,6 @@
   visibility: visible;
   content: '';
   transform: rotate(45deg);
-}
-
-.tooltip[data-show] {
-  display: block;
 }
 
 .tooltip[data-popper-placement^='top'] > .arrow {
